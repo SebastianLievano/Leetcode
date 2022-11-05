@@ -36,7 +36,7 @@ public:
     //Search algorithm
     void search(int i, int j, node* last, vector <vector<char>>& board){
         //Checking bounds
-        if(i < 0 || i > m-1 || j < 0 || j > n-1){
+        if(i < 0 || i >=m || j < 0 || j >= n){
             return;
         }
         //If visited
